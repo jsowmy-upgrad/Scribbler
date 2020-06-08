@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!-- Include Font Awesome file here -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <!-- Include Google Fonts file here -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montez&display=swap"
+      rel="stylesheet"
+    />
+    <link href='../styles/common.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/post.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- Header div -->
+<div class="header-bar">
+        <span style="float: left;">
+            <h2>ScriBBler</h2>
+            <h4>Explore, Imagine, Create</h4>
+        </span>
+
+        <span style="float: right;">
+            <button class="sign-buttons" id="signUp-Btn">
+              Sign Up
+            </button>
+            <button class="sign-buttons" id="signIn-Btn">
+              Sign In
+            </button>
+        </span>
+    </div>
+
+<!-- content div -->
+<div class="content">
+    <div class="content-body">
+        <!-- Title -->
+        <div class="title" id="post-title">Everything you should know about 'module' & 'require' in Node.js</div>
+
+        <!-- Author and Edit button -->
+        <div class="btn-row">
+            <div class="author">Srishti Gupta</div>
+            <button id='btn-text' type="button" class="btn" onclick="editButtonClick()">Edit
+                <i class="fa fa-pencil-square-o" id="btn-icon"></i>
+            </button>
+        </div>
+
+        <!-- post text -->
+        <div class="post-text" id="post-text">Node.js treats each JavaScript file as a separate module. For instance, if
+            you have a file
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you
+            can
+            say that you’ve created a module
+            named xyz.
+        </div>
+
+        <!-- Like -->
+        <button type="button" class="btn" onclick="postLiked()"><i class="fa fa-thumbs-up" id="btn-like-text">&nbsp;Like&nbsp;&nbsp;</i>
+        </button>
+        <div class="btn-like-tip" id="like-tip">Be the first one to like this!</div>
+
+        <!-- Comment -->
+        <textarea id="edt-comment" class="edt-comment" rows="4" placeholder="Leave a comment..."></textarea>
+        <button type="button" class="btn" onclick="addComment()">Comment</button>
+        <div class="comment-header">All Comments</div>
+        <div class="comment-list" id="comment-list">
+            <div class="comment-text">Great post! Thanks!</div>
+        </div>
+    </div>
+</div>
+
+<!-- Script to include header -->
+    <script src="../scripts/post.js"></script>
+</body>
+</html>
