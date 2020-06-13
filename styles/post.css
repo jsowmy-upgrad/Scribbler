@@ -1,14 +1,19 @@
-.content {
-    padding: 10px 30px 10px 30px;
-}
-
-.content-body {
+.comment-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: space-evenly;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
+
+.username {
+    align-self: baseline;
+    font-family: cursive;
+    font-size: 1em;
+}
+
 .title {
     text-align: center;
     font-family: sans-serif;
@@ -21,48 +26,20 @@
     padding: 5px;
 }
 
-.btn-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.author {
-    align-self: baseline;
-    font-family: monospace;
+.comment-header {
     font-size: 1.1em;
-}
-
-.btn {
-    align-self: baseline;
-    font-family: sans-serif;
     font-weight: bold;
-    color: white;
-    border-width: 0px;
-    min-width: 80px;
-    width: fit-content;
-    background-color: crimson;
-    padding: 10px;
-    box-shadow: 0px 2px 10px crimson;
-    cursor: pointer;
-}
-
-.btn:focus {
-    outline: none;
-}
-.btn:hover {
-    box-shadow: 0px 2px 5px crimson;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .postEdit{
     color:white;
     background-color: #e60073;
     box-shadow: 0px 5px  12px -4px #e60073;
-    font-family: 'Abel', sans-serif;
+    font-family: sans-serif;
     margin: 10px;
     cursor: pointer;
-    font-family: Abel;
     padding: 5px 10px;
     font-size: 14px;
     display:table-cell;
@@ -79,26 +56,8 @@
     padding: 5px;
 }
 
-.btn-like-tip {
-    margin-top: 10px;
-    font-family: monospace;
-}
-
-.edt-comment {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    resize: vertical;
-}
-
-.comment-header {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
 .comment-list {
-    background-color: lightgray;
+    background-color: gray;
     padding: 10px 10px 10px 10px;
 
 }
@@ -109,7 +68,32 @@
     margin: 10px 0px 10px 0px;
 }
 
-.border-crimson {
-    border-color: pink;
-    border-width: 1px;
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
 }
+
+.crimson-button {
+    align-self: baseline;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    border-width: 0px;
+    min-width: 80px;
+    width: fit-content;
+    background-color: crimson;
+    padding: 10px;
+    box-shadow: 0px 2px 10px crimson;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px crimson;
+}
+
+
+.txt-edit-highlight {
+    border-color: pink;
+    border-width: 1.5px;
+}
+
+
